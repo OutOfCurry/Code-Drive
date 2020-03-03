@@ -1,0 +1,10 @@
+import java.util.*;
+class Nim {
+  public static void main(String [] args) {
+    Scanner reader = new Scanner(System.in);
+    System.out.println("Player1, Type in your username:");
+    String player1 = reader.nextLine();
+    
+    reader.close();
+  }
+}

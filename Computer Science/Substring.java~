@@ -1,0 +1,15 @@
+
+//Substring
+import java.util.*;
+
+class Substring {
+  public static void main(String[] args) {
+    while (true) {
+    Scanner reader = new Scanner(System.in);
+    String sentence = "My age is 10";
+    
+    
+    reader.close();
+    }
+  }
+}

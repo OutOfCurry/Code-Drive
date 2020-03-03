@@ -1,0 +1,51 @@
+/*Tech                      Public Speaking          Sport/well being          STEM
+ * Comtech Club     Public Speaking Club    A mile a miracle       Math Club
+ * Robotics Club      Toastmasters                Athletic Council        Engineering club
+ * Technovation       Speak to me                Relay for Life             Chemistry Contest Club
+ * Computer Club    Youth Alive                   Well being club        Science Club
+ * Digital Media Club                                                                     Science Tutors
+ * */
+import java.util.*;
+class ClubSelection {
+  public static void main(String[] args) {
+    Scanner reader = new Scanner(System.in); //use of scanner
+    System.out.println("Type your name:");
+    String name = reader.nextLine(); // name input
+    String q1 = ("1. Technology");
+    String q2 = ("2. Projecting your voice");
+    String q3 = ("3. Physical / Well-being");
+    String q4 = ("4. School subjects involving the sciences/maths");
+    System.out.println(name); // name print
+    System.out.println("What number are you interested in?");
+    System.out.println(q1);
+    System.out.println(q2);
+    System.out.println(q3);
+    System.out.println(q4);
+    int answer = reader.nextInt();
+    
+    if (answer == 1) {
+    System.out.
+      println(name + ", you picked " + q1);
+    }
+    
+    else if (answer == 2) {
+    System.out.
+      println(name + ", you picked " + q2);
+    }
+    
+    else if (answer == 3) {
+    System.out.
+      println(name + ", you picked " + q3);
+    }
+    
+    else if (answer == 4) {
+    System.out.
+      println(name + ", you picked " + q4 + ".");
+    }
+    
+    else { 
+      System.out.println("Invalid.");
+    }
+    
+  }
+}

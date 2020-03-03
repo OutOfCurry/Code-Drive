@@ -1,0 +1,16 @@
+import java.util.*;
+class ForEach {
+  public static void main(String [] args) {
+    Scanner reader = new Scanner(System.in);
+    int[] arr = {1, 2, 3, 4, 5): //Array of numbers
+  /* 
+   * for (type variable: itterable_object) {
+   *  // do some code
+   * }
+   * */
+  for (int x: arr) {
+  System.out.println(x);
+    
+    
+  }
+}

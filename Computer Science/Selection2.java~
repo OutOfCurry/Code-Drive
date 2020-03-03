@@ -1,0 +1,19 @@
+import java.util.*;
+class Selection2 {
+  public static void main(String [] args) {
+    Scanner reader = new Scanner(System.in);
+    String name = reader.nextLine();
+    /* An if statement follows the form
+     * if (Conditions) {
+     * Random code
+     * }
+     * */
+    // Remember that if statements only execute when the condition is true and they are skilled if false
+    
+    int mark = 51;
+    if (mark > 50) {
+      System.out.println("Passed" + name);
+    }
+    else { 
+      System.out.println("You failed");
+    }

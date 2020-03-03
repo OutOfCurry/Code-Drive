@@ -1,0 +1,12 @@
+import java.util.*;
+class WhileLoop {// these loops execute until the condition is met
+  public static void main(String[] args) {
+    Scanner reader = new Scanner(System.in);
+    int mark = 0;
+    while (mark<= 50) {
+      system.out.println("Try again");
+      mark = reader.nextInt();
+    }
+    System.out.println("Congrats!");
+  }
+}

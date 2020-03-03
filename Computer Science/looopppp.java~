@@ -1,0 +1,10 @@
+import java.util.*;
+class looopppp {
+  public static void main(String[] args) {
+    int age = 21;
+    do
+    {
+      System.out.println("Hello!"); // Output hello
+      age++; //age + 1
+    } while (age <10); // check the condition
+  

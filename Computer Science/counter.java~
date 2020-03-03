@@ -1,0 +1,12 @@
+import java.util.*;
+class counter {
+  public static void main(String[] args) {
+    Scanner reader = new Scanner(System.in);
+    int counter = 0
+    int guess = reader.nextInt();
+    if (guess != 5) {
+      (counter + 1);
+    }
+    System.out.println(counter);
+  }
+}

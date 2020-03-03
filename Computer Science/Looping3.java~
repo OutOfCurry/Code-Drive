@@ -1,0 +1,17 @@
+import java.util.*;
+class Looping3 {
+  public static void main(String [] args) {
+    Scanner reader = new Scanner(System.in);
+    String name;
+    name = reader.nextLine();
+     System.out.println("Type in your name. Type -1 tp exit");
+    while (!name.equals("-1")) {
+      System.out.println("hello" + name);
+      name = reader.nextLine();
+      
+    }
+           
+           reader.close();
+           }
+}
+}
