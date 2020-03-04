@@ -11,12 +11,33 @@ class Nim {
     String player2 = reader.nextLine();
     System.out.println(player2);
     Random rand = new Random(); // random class creation
-    //random int creation for each Pilr
+    //random int creation for each Pile
     int A = 1 + rand.nextInt(10);
     int B = 1 + rand.nextInt(10);
     int C = 1 + rand.nextInt(10); 
-    System.out.print("A:" + A + " " + "B:" + B +" " + "C:" + C);//prints out piles
-  
+    System.out.println(player1 + " Pick a pile tor remove a number from:");
+    System.out.println("A:" + A + " " + "B:" + B +" " + "C:" + C);//prints out piles
+    String pile = reader.nextLine();
+    if (pile.equals("A")) {
+      System.out.println("Pick a number to remove from Pile A");
+      int removenum = reader.nextInt();
+      if (removenum > A) {
+        System.out.println("Invalid.");
+    }
+    else if (pile.equals("B")) {
+      System.out.println("Pick a number to remove from Pile B");
+      if (removenum > B) {
+        System.out.println("Invalid.");
+    }
+    else if (pile.equals("C")) {
+      System.out.println("Pick a number to remove from Pile C");
+     if (removenum > C) {
+        System.out.println("Invalid.");
+    }
     reader.close();
   }
+  }
 }
+  }
+}
+  
