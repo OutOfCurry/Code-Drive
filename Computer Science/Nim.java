@@ -1,3 +1,10 @@
+/*
+Nim Game
+Author: Nithursan
+Teacher: Mr.Ho
+Assignment: Nim Game
+*//
+  
 import java.util.*;
 class Nim {
   public static void main(String [] args) {
