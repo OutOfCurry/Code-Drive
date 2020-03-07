@@ -26,7 +26,7 @@ class Nim {
     int C = 1 + rand.nextInt(10); 
     
     // Game Initiation
-    System.out.println(player1 + " Pick a pile to remove a number from:");
+    System.out.println(player1 + " Pick a pile (LETTER MUST BE IN CAPS):");
     //prints out piles
     System.out.println("A:" + A + " " + "B:" + B +" " + "C:" + C);
     // User Input for Pile chooser
