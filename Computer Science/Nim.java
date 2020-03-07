@@ -3,7 +3,7 @@ Nim Game
 Author: Nithursan
 Teacher: Mr.Ho
 Assignment: Nim Game
-*//
+*/
   
 import java.util.*;
 class Nim {
@@ -24,7 +24,7 @@ class Nim {
     int A = 1 + rand.nextInt(10);
     int B = 1 + rand.nextInt(10);
     int C = 1 + rand.nextInt(10); 
-    
+  
     // Game Initiation
     System.out.println(player1 + " Pick a pile (LETTER MUST BE IN CAPS):");
     //prints out piles
@@ -71,8 +71,47 @@ class Nim {
     // Player 2s turn
     System.out.println(player2 + " Pick a pile to remove a number from:");
     System.out.println("A:" + A + " " + "B:" + B +" " + "C:" + C);//prints out piles
+    System.out.println("Type the number According to its pile | A = 1 , B = 2 , C = 3");
     
-    reader.close();
+    // fixing the scanner bug 
+    int pile2 = reader.nextInt();
+    
+    // If Pile A is entered
+    if (pile2 == 1) {
+      System.out.println("Pick a number to remove from Pile A");
+      int removenum = reader.nextInt();
+         if (removenum <= A) {
+           A = (A - removenum);
+      System.out.println("A: " + A + " B:" + B + " C:" + C);
+         }
+         else {
+         System.out.println("Invalid.");
+         }}
+    
+    // If Pile B is Entered
+    else if (pile2 == 2) {
+      System.out.println("Pick a number to remove from Pile B: ");
+      int removenum = reader.nextInt();
+      if (removenum <= B) {
+        B = (B - removenum);
+         System.out.println("A: " + A + " B:" + B + " C:" + C);
+      }
+      else {
+        System.out.println("Invalid.");
+      }}
+    
+    // If Pile C is entered
+    else if (pile2 == 3) {
+      System.out.println("Pick a number to remove from Pile C: ");
+      int removenum = reader.nextInt();
+      if (removenum <= C) {
+        C = (C - removenum);
+         System.out.println("A: " + A + " B:" + B + " C:" + C);
+      }
+      else {
+        System.out.println("Invalid.");
+      }}
+ 
+    }
     
   }
-}
