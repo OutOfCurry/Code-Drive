@@ -76,14 +76,17 @@ class Nim {
       }}
     if ( A == 1 && B == 0 && C == 0) {
       System.out.println(player2 + ", You have taken the L. Due to the unfortunate reasoning of your brain, " + player1 + " has won.");
+       System.out.println(player1 + ",  you have lost in: " + counter2 + "tries =)");
       break;
     }
      else if ( A == 0 && B == 1 && C == 0) {
       System.out.println(player2 + ", You have taken the L. Due to the unfortunate reasoning of your brain, " + player1 + " has won.");
+       System.out.println(player1 + ",  you have lost in: " + counter2 + "tries =)");
       break;
     }
      else if  ( A == 0 && B == 0 && C == 1) {
       System.out.println(player2 + ", You have taken the L. Due to the unfortunate reasoning of your brain, " + player1 + " has won.");
+       System.out.println(player1 + ",  you have lost in: " + counter2 + "tries =)");
       break;
     }
      else if (A == 0 && B == 0 && C == 0) {
@@ -140,14 +143,18 @@ class Nim {
      //System.out.println(counter2 + "| " + counter1);
        if ( A == 1 && B == 0 && C == 0) {
       System.out.println(player1 + ", You have taken the L. Due to the unfortunate reasoning of your brain, " + player2 + " has won.");
+       System.out.println(player1 + ",  you have lost in: " + counter1 + "tries =)");
       break;
     }
      else if ( A == 0 && B == 1 && C == 0) {
       System.out.println(player1 + ", You have taken the L. Due to the unfortunate reasoning of your brain, " + player2 + " has won.");
+       System.out.println(player1 + ",  you have lost in: " + counter1 + "tries =)");
+      
       break;
     }
      else if  ( A == 0 && B == 0 && C == 1) {
       System.out.println(player1 + ", You have taken the L. Due to the unfortunate reasoning of your brain, " + player2 + " has won.");
+      System.out.println(player1 + ",  you have lost in: " + counter1 + "tries =)");
       break;
     }
      else if (A == 0 && B == 0 && C == 0){
