@@ -27,14 +27,17 @@ class Nim {
   
     while (true) {
     // Game Initiation
-    System.out.println(player1 + " Pick a pile (LETTER MUST BE IN CAPS):");
+    System.out.println(player1 + " Pick a pile:");
     //prints out piles
     System.out.println("A:" + A + " " + "B:" + B +" " + "C:" + C);
+     System.out.println("Type the number According to its pile | A = 1 , B = 2 , C = 3");
     // User Input for Pile chooser
-    String pile = reader.nextLine();
-    
+    int pile = reader.nextInt();
+    if (A == 0 && B == 0 && C == 0) {
+      break;
+    }
     // If Pile A is entered
-    if (pile.equals("A")) {
+    if (pile == 1) {
       System.out.println("Pick a number to remove from Pile A");
       int removenum = reader.nextInt();
          if (removenum <= A) {
@@ -46,7 +49,7 @@ class Nim {
          }}
     
     // If Pile B is Entered
-    else if (pile.equals("B")) {
+    else if (pile == 2) {
       System.out.println("Pick a number to remove from Pile B: ");
       int removenum = reader.nextInt();
       if (removenum <= B) {
@@ -58,7 +61,7 @@ class Nim {
       }}
     
     // If Pile C is entered
-    else if (pile.equals("C")) {
+    else if (pile == 3) {
       System.out.println("Pick a number to remove from Pile C: ");
       int removenum = reader.nextInt();
       if (removenum <= C) {
@@ -111,13 +114,16 @@ class Nim {
       }
       else {
         System.out.println("Invalid.");
-      }}
-    
-    if (A == 0 && B == 0 && C == 0) {
+      }
+    }
+    else if ((A == 0) && (B == 0) && (C == 0)) {
       break;
+    }
+    
  
     }
     
   }
 }
-}
+
+
