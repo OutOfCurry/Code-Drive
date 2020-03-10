@@ -128,7 +128,9 @@ class Nim {
     }
      
      else if (A == 0 && B == 0 && C == 0) {
-       System.out.println("Tie. Both of you have lost to the lack of intelligence stored inside your brain.");
+       System.out.println(player2 + " has achieved victory");
+       System.out.println(player1 + ",  you have lost in: " + counter1 + " tries =)");
+      System.out.println(player2 + ",  you have won in: " + counter2 + " tries =)");
        break;
      }
 
@@ -227,7 +229,9 @@ class Nim {
       break;
     }
      else if (A == 0 && B == 0 && C == 0){
-       System.out.println("Tie. Both of you have lost to the lack of intelligence stored inside your brain.");
+       System.out.println(player1 + "has achieved victory.");
+        System.out.println(player1 + ",  you have won in: " + counter1 + " tries =)");
+       System.out.println(player2 + ",  you have lost in: " + counter2 + " tries =)");
        break;
 
     }
