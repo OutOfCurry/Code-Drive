@@ -232,6 +232,7 @@ class Nim {
 
     }
 }
+    // Closing the Reader
+    reader.close();
 }
 }
-  
