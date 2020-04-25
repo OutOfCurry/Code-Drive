@@ -332,7 +332,6 @@ class Pokemon {
         System.out.println("HP:"+  (ComputerHealth[0]) + " | " + ComputerPokemon[0]);
         System.out.println("HP:"+ UserHealth[2] + " | " + UserPokemon[2]);
       }
-      }
       //Opponents Turn 
        if (ComputerHealth[0]>0){
     System.out.println("Piplup has decided to use Bubble Beam! | Your Pokemon has lost 20 Damage!");
@@ -347,7 +346,10 @@ class Pokemon {
       break;
     }
         }
+      
     }
+    
+}
 }
 }
 
